@@ -1,0 +1,244 @@
+:root {
+    --azul-jovi: #1E46E6;
+    --azul-escuro-jovi: #242933;
+    --branco-jovi: #F5F7FA;
+    --branco: #FFFFFF;
+    --branco-sub: #FFFFFFE8;
+    --fonte-primaria: "Google Sans Flex", sans-serif;
+    --branco-hover: #FFFFFFBF;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    background-color: rgb(42, 0, 81);
+}
+
+main {
+    padding-top: 98px;
+}
+
+/* Início: menu hamburguer */
+
+.menu {
+    padding: 35px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--azul-jovi);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-botao {
+    display: none;
+}
+
+.menu-botao:checked+label .menu-icon {
+    background-image: url(../assets/menu-fechar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.menu-botao:checked~.lista-itens {
+    display: block;
+    width: 100%;
+    background: var(--azul-jovi);
+}
+
+.menu.menu-aberto {
+    background-color: var(--azul-jovi);
+}
+
+
+.menu-icon {
+    display: block;
+    background-image: url(../assets/menu-hamburguer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 23px;
+    transition: 0.3s ease;
+}
+
+.lista-itens {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 0 40px 40px 35px;
+}
+
+.lista-itens a {
+    display: block;
+    color: var(--branco-jovi);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.divisor-menu {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: 100%;
+    border: 0.01rem solid #FFFFFF80;
+    border-radius: 8px;
+}
+
+/* Fim: menu hamburguer */
+
+
+/* Início: logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-jovi {
+    display: block;
+    background-image: url(../assets/logo-jovi.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 105px;
+    height: 28px;
+}
+
+
+/* Fim: logo */
+
+/* Responsividade: menu */
+
+/* Tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+
+    main {
+        padding-top: 120px;
+    }
+
+    .menu {
+        padding: 40px 80px;
+    }
+
+    .menu-botao:checked~.lista-itens {
+        display: block;
+        width: 100%;
+    }
+
+    .menu-botao:checked+label .menu-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu-itens {
+        width: 45px;
+        height: 32px;
+    }
+
+    .menu-icon {
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lista-itens {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .lista-itens a {
+        font-size: 1.05rem;
+    }
+
+    .logo {
+        width: 150px;
+        height: 40px;
+    }
+
+    .logo-jovi {
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+    .menu {
+        padding: 40px 80px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo a {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-jovi {
+        width: 128px;
+        height: 35px;
+    }
+
+    .menu-itens {
+        display: flex;
+        align-items: center;
+    }
+
+    .lista-itens {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+        list-style: none;
+        position: static;
+        padding: 0;
+    }
+
+    .lista-itens a {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .lista-itens a:hover {
+        color: var(--branco-hover)
+    }
+
+    .divisor-menu {
+        display: none;
+    }
+
+    .menu-botao,
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* Fim Responsividade: menu */
