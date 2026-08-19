@@ -8,8 +8,12 @@
   --branco-hover: #ffffffbf;
   --borda-card: #1e46e60d;
   --sub-escuro: #242933d9;
-  --font-size-tiutlo-hero-mobile: 2.5rem;
+
+  --font-size-titulo-hero-mobile: 2.5rem;
   --font-size-sub-hero-mobile: 1rem;
+
+  --font-size-titulo-mobile: 1.5rem;
+  --font-size-sub-mobile: 1rem;
 }
 
 * {
@@ -54,7 +58,7 @@ main {
   display: none;
 }
 
-.menu-botao:checked + label .menu-icon {
+.menu-botao:checked+label .menu-icon {
   background-image: url(../assets/menu-fechar.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +66,7 @@ main {
   height: 25px;
 }
 
-.menu-botao:checked ~ .lista-itens {
+.menu-botao:checked~.lista-itens {
   display: block;
   width: 100%;
   background: var(--azul-jovi);
@@ -139,12 +143,12 @@ main {
     padding: 40px 80px;
   }
 
-  .menu-botao:checked ~ .lista-itens {
+  .menu-botao:checked~.lista-itens {
     display: block;
     width: 100%;
   }
 
-  .menu-botao:checked + label .menu-icon {
+  .menu-botao:checked+label .menu-icon {
     width: 35px;
     height: 35px;
   }
@@ -263,7 +267,7 @@ main {
 
 #hero-titulo {
   color: var(--branco-jovi);
-  font-size: var(--font-size-tiutlo-hero-mobile);
+  font-size: var(--font-size-titulo-hero-mobile);
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -387,12 +391,12 @@ main {
 }
 
 #solucao-titulo {
-  font-size: 1.5rem;
+  font-size: var(--font-size-titulo-mobile);
   color: var(--azul-escuro-jovi);
 }
 
 #solucao-sub {
-  font-size: 1rem;
+  font-size: var(--font-size-sub-mobile);
   font-weight: 500;
   color: var(--sub-escuro);
 }
@@ -456,7 +460,7 @@ main {
   background-image: url(../assets/translate-icon.svg);
 }
 
-/* Responsividade: hero */
+/* Responsividade: solução */
 
 /* Tablet */
 @media screen and (min-width: 576px) and (max-width: 991px) {
@@ -465,43 +469,142 @@ main {
   }
 
   #solucao-cabecalho {
-  gap: 10px;
-  margin-bottom: 35px;
-}
+    gap: 10px;
+    margin-bottom: 35px;
+  }
 
-#solucao-titulo {
-  font-size: 1.8rem;
-}
+  #solucao-titulo {
+    font-size: 1.8rem;
+  }
 
-#solucao-sub {
-  font-size: 1.2rem;
-}
+  #solucao-sub {
+    font-size: 1.2rem;
+  }
 
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
 
-    .solucao-section {
+  .solucao-section {
     padding: 80px 80px 40px 80px;
   }
 
   .grade-recursos {
-  grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #solucao-titulo {
+    font-size: 2rem;
+  }
+
+  #solucao-sub {
+    font-size: 1.2rem;
+  }
+
+  #solucao-cabecalho {
+    gap: 8px;
+    margin-bottom: 45px;
+  }
+
+  .icone-recurso {
+    margin-bottom: 14px;
+  }
+
 }
 
-#solucao-titulo {
-  font-size: 2rem;
+/* Fim Responsividade: solução */
+
+/* Fim: Solução */
+
+/* Início: público-alvo */
+
+.publico-section {
+  padding: 40px 24px 20px 24px;
 }
 
-#solucao-sub {
+#publico-titulo {
+  font-size: var(--font-size-titulo-mobile);
+  margin-bottom: 14px;
+}
+
+#publico-texto p {
+  font-size: var(--font-size-sub-mobile);
+}
+
+.divisor-paragrafo {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.publico-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.publico-imagem {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-image: url(../assets/publico-alvo-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  order: -1;
+}
+
+/* Responsividade: solução */
+
+/* Tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+
+.publico-section {
+  padding: 30px 60px 30px 60px;
+}
+
+#publico-titulo {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+#publico-texto p {
+  font-size: 1.1rem;
+}
+
+.divisor-paragrafo {
+  margin-bottom: 14px;
+}
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+.publico-section {
+   padding: 20px 80px 40px 80px;
+}
+
+#publico-titulo {
+  font-size:2rem;
+}
+
+#publico-texto p {
   font-size: 1.2rem;
 }
 
-  #solucao-cabecalho {
-  gap: 8px;
-  margin-bottom: 45px;
-}
+  .publico-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .publico-imagem {
+    aspect-ratio: 4 / 3; 
+    height: 80%;
+  }
+
 }
 
-/* Fim Responsividade: hero */
+/* Fim Responsividade: solução */
+
+/* Fim: público-alvo */
