@@ -311,16 +311,17 @@ main {
 
   #hero-titulo {
     font-size: 4rem;
+    margin-bottom: 8px;
   }
 
   #hero-sub {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 36px;
   }
 
   .hero-botao {
-    padding: 16px 20px;
-    font-size: 1.5rem;
+    padding: 14px 20px;
+    font-size: 1.1rem;
   }
 
   .hero-botao-prototipo {
@@ -460,49 +461,47 @@ main {
 /* Tablet */
 @media screen and (min-width: 576px) and (max-width: 991px) {
   .solucao-section {
-    padding: 60px 30px 60px 60px;
+    padding: 60px 60px 30px 60px;
   }
 
   #solucao-cabecalho {
-  gap: 12px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 35px;
 }
 
 #solucao-titulo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 #solucao-sub {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
-.grade-recursos {
-  gap: 1.2rem;
-}
-
-.cartao-recurso {
-  padding: 30px 20px;
-}
-
-.cartao-recurso h4 {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-}
-
-.cartao-recurso p {
-  font-size: 0.9rem;
-}
-
-.icone-recurso {
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
+
+    .solucao-section {
+    padding: 80px 80px 40px 80px;
+  }
+
+  .grade-recursos {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#solucao-titulo {
+  font-size: 2rem;
+}
+
+#solucao-sub {
+  font-size: 1.2rem;
+}
+
+  #solucao-cabecalho {
+  gap: 8px;
+  margin-bottom: 45px;
+}
 }
 
 /* Fim Responsividade: hero */
