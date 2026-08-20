@@ -802,7 +802,7 @@ main {
 /* Início: Contato */
 
 .contato-section {
-  padding: 40px 24px 20px 24px;
+  padding: 40px 24px 40px 24px;
 }
 
 .contato-grade {
@@ -891,7 +891,7 @@ main {
 /* Tablet */
 @media screen and (min-width: 576px) and (max-width: 991px) {
   .contato-section {
-    padding: 30px 60px 30px 60px;
+    padding: 30px 60px 60px 60px;
   }
 
   .contato-cabecalho {
@@ -942,7 +942,7 @@ main {
 /* Desktop */
 @media screen and (min-width: 992px) {
   .contato-section {
-    padding: 40px 120px 40px 120px;
+    padding: 40px 120px 48px 120px;
   }
 
   .contato-grade {
