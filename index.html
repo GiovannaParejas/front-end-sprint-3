@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./src/css/style.css" />
   <title>Início</title>
 </head>
@@ -32,7 +33,7 @@
           <hr class="divisor-menu" />
           <li><a href="#publico-alvo">Público-alvo</a></li>
           <hr class="divisor-menu" />
-          <li><a href="#">Galeria</a></li>
+          <li><a href="#galeria">Galeria</a></li>
           <hr class="divisor-menu" />
           <li><a href="#">Nossa Equipe</a></li>
           <hr class="divisor-menu" />
@@ -154,9 +155,36 @@
 
       </div>
     </section>
+
+    <!-- Galeria -->
+    <section class="galeria-section" id="galeria">
+
+      <h2 class="galeria-titulo">Veja o JOVI Study Lens em ação</h2>
+
+      <div class="swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="./src/assets/carrossel-1.png" alt="Tela Inicial"></div>
+          <div class="swiper-slide"><img src="./src/assets/carrossel-2.png" alt="Pasta"></div>
+          <div class="swiper-slide"><img src="./src/assets/carrossel-3.png" alt="Notas"></div>
+          <div class="swiper-slide"><img src="./src/assets/carrossel-4.png" alt="IA"></div>
+          <div class="swiper-slide"><img src="./src/assets/carrossel-5.png" alt="Grifar"></div>
+          <div class="swiper-slide"><img src="./src/assets/carrossel-6.png" alt="Copiar"></div>
+          <div class="swiper-slide"><img src="./src/assets/carrossel-8.png" alt="Traduzir"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+
+      </div>
+    </section>
   </main>
 
-  <script src="./src/js/script.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js">  
+  </script>
+   <script src="./src/js/script.js"></script>
 </body>
 
 </html>
