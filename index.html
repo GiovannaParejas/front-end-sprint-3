@@ -65,7 +65,9 @@
 
           <div class="hero-botoes">
             <a href="#solucao" class="hero-botao">Conheça a solução</a>
-            <a href="#galeria" class="hero-botao hero-botao-prototipo">Ver protótipo</a>
+            <a href="#galeria" class="hero-botao hero-botao-prototipo"
+              >Ver protótipo</a
+            >
           </div>
         </div>
       </section>
@@ -295,47 +297,43 @@
           <div class="contato-form-wrap">
             <div class="contato-cabecalho">
               <h2 id="contato-titulo">Fale com a equipe</h2>
-              <p id="contato-sub">
-                Dúvidas ou sugestões? Envie uma
-                mensagem
-              </p>
+              <p id="contato-sub">Dúvidas ou sugestões? Envie uma mensagem</p>
             </div>
 
             <form action="" class="contato-form" id="formContato">
               <div class="campos">
                 <div class="campo">
-                <label for="nome">Nome</label>
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  placeholder="Insira o seu nome"
-                  required
-                />
-              </div>
+                  <label for="nome">Nome</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Insira o seu nome"
+                    required
+                  />
+                </div>
 
-              <div class="campo">
-                <label for="email">E-mail</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="exemplo@email.com"
-                  required
-                />
-              </div>
+                <div class="campo">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    required
+                  />
+                </div>
 
-              <div class="campo">
-                <label for="mensagem">Mensagem</label>
-                <textarea
-                  name="mensagem"
-                  id="mensagem"
-                  placeholder="Digite a sua mensagem"
-                  required
-                ></textarea>
+                <div class="campo">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea
+                    name="mensagem"
+                    id="mensagem"
+                    placeholder="Digite a sua mensagem"
+                    required
+                  ></textarea>
+                </div>
               </div>
-              </div>
-              
 
               <button type="submit" class="botao-form">Enviar Mensagem</button>
               <p class="form-status" id="formStatus" role="status"></p>
@@ -351,11 +349,70 @@
       </section>
 
       <section class="cta-section">
-        <h2 id="cta-titulo">Pronto para transformar a forma como você estuda?</h2>
-        <p id="cta-sub">Experimente o JOVI Study Lens e veja o que a sua câmera é capaz de fazer.</p>
+        <h2 id="cta-titulo">
+          Pronto para transformar a forma como você estuda?
+        </h2>
+        <p id="cta-sub">
+          Experimente o JOVI Study Lens e veja o que a sua câmera é capaz de
+          fazer.
+        </p>
         <a href="#galeria" class="cta-botao">Ver protótipo</a>
       </section>
     </main>
+
+    <footer class="rodape">
+      <div class="rodape-grade">
+        <div class="rodape-jovi">
+          <a href="index.html"><img
+            src="./src/assets/logo-footer.svg"
+            alt="Logo Jovi"
+            class="logo-footer"
+          /></a>
+          <p>Transforme imagens em conhecimento</p>
+        </div>
+
+        <nav class="rodape-coluna">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#solucao">Solução</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#nossa-equipe">Nossa Equipe</a></li>
+            <li><a href="#contato">Fale conosco</a></li>
+          </ul>
+        </nav>
+
+        <div class="rodape-coluna">
+          <h3>Integrantes</h3>
+          <ul>
+            <li>Bruce Li</li>
+            <li>Felipe Rorato</li>
+            <li>Giovanna Parejas</li>
+            <li>Laura Mirilli</li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h3>Contato</h3>
+          <ul>
+            <li>
+              <a href="mailto:consultoriauno1espi@gmail.com" class="link-email">
+                <img
+                  src="./src/assets/email-icon.svg"
+                  alt=""
+                  class="icone-email"
+                />
+                consultoriauno1espi@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="rodape-copy">
+        © 2026 JOVI Study Lens | Consultoria UNO | Sprint 3
+      </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./src/js/script.js"></script>

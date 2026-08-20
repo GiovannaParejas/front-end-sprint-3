@@ -34,13 +34,13 @@ body {
 }
 
 main {
-  padding-top: 98px;
+  padding-top: 87px;
 }
 
 /* Início: menu hamburguer */
 
 .menu {
-  padding: 35px 40px;
+  padding: 30px 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -124,8 +124,8 @@ main {
 
 .logo-jovi {
   display: block;
-  width: 105px;
-  height: 28px;
+  width: 100px;
+  height: 27px;
   object-fit: contain;
 }
 
@@ -136,7 +136,7 @@ main {
 /* Tablet */
 @media screen and (min-width: 576px) and (max-width: 991px) {
   main {
-    padding-top: 120px;
+    padding-top: 115px;
   }
 
   .menu {
@@ -174,8 +174,8 @@ main {
   }
 
   .logo {
-    width: 150px;
-    height: 40px;
+    width: 145px;
+    height: 35px;
   }
 
   .logo-jovi {
@@ -1076,7 +1076,7 @@ main {
 /* Desktop */
 @media screen and (min-width: 992px) {
   .cta-section {
-    padding: 3rem 1.5rem;
+    padding: 4.5rem 1.5rem;
   }
 
   #cta-titulo {
@@ -1109,14 +1109,159 @@ main {
 
 /* Início: Footer */
 
+.rodape {
+  padding: 40px 24px 40px 24px;
+}
+
+.rodape-grade {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rodape-jovi {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.rodape-jovi p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.rodape-coluna ul {
+  color: var(--azul-escuro-jovi);
+  margin-top: 8px;
+  margin-bottom: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rodape-coluna h3 {
+  font-size: 1.05rem;
+}
+
+.rodape-coluna ul li a {
+  color: var(--azul-escuro-jovi);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.rodape-copy {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #00000080;
+  padding: 8px 0;
+}
+
+.link-email {
+  color: var(--azul-escuro-jovi);
+  font-size:1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icone-email {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+}
+
 /* Responsividade: Footer */
 
 /* Tablet */
 @media screen and (min-width: 576px) and (max-width: 991px) {
+  .rodape {
+  padding: 60px 60px 30px 60px;
+}
+
+.rodape-jovi {
+  margin-bottom: 40px;
+}
+
+.rodape-jovi p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.rodape-coluna ul {
+  margin-top: 12px;
+  margin-bottom: 30px;
+  gap: 8px;
+}
+
+.rodape-coluna h3 {
+  font-size: 1.05rem;
+}
+
+.rodape-coluna ul li a {
+  font-size: 1rem;
+}
+
+.rodape-copy {
+  font-size: 0.8rem;
+  padding: 8px 0;
+}
+
+.link-email {
+  font-size:1rem;
+  gap: 8px;
+}
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
+
+  .rodape {
+  padding: 60px 100px 25px 100px;
+}
+
+.rodape-grade {
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.rodape-jovi {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.rodape-jovi p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.rodape-coluna ul {
+  color: var(--azul-escuro-jovi);
+  margin-top: 8px;
+  margin-bottom: 40px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rodape-coluna ul li a {
+  transition: 0.3s ease;
+}
+
+.rodape-coluna ul li a:hover {
+  color: var(--azul-jovi);
+}
+
+
+}
+
+@media screen and (min-width: 1440) {
+
+
+.rodape-grade {
+  gap: 0;
+}
+
+
 }
 
 /* Fim Responsividade: Footer */
