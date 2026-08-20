@@ -142,6 +142,10 @@ main {
   object-fit: contain;
 }
 
+.lista-itens a:hover {
+  color: var(--branco-hover);
+}
+
 /* Fim: logo */
 
 /* Responsividade: menu */
@@ -249,10 +253,6 @@ main {
     font-size: 1.1rem;
   }
 
-  .lista-itens a:hover {
-    color: var(--branco-hover);
-  }
-
   .divisor-menu {
     display: none;
   }
@@ -317,6 +317,18 @@ main {
   border: 1px solid var(--branco);
 }
 
+.hero-botao:hover {
+  color: var(--branco);
+  background-color: transparent;
+  border: 2px solid var(--branco);
+}
+
+.hero-botao-prototipo:hover {
+  color: var(--azul-escuro-jovi);
+  background-color: var(--branco);
+  border: 2px solid var(--branco);
+}
+
 /* Responsividade: hero */
 
 /* Tablet */
@@ -369,18 +381,6 @@ main {
   }
 
   .hero-botao-prototipo {
-    border: 2px solid var(--branco);
-  }
-
-  .hero-botao:hover {
-    color: var(--branco);
-    background-color: transparent;
-    border: 2px solid var(--branco);
-  }
-
-  .hero-botao-prototipo:hover {
-    color: var(--azul-escuro-jovi);
-    background-color: var(--branco);
     border: 2px solid var(--branco);
   }
 }
@@ -447,6 +447,10 @@ main {
   margin-bottom: 10px;
 }
 
+.cartao-recurso:hover {
+  transform: translateY(-6px);
+}
+
 /* Responsividade: solução */
 
 /* Tablet */
@@ -494,10 +498,6 @@ main {
 
   .icone-recurso {
     margin-bottom: 14px;
-  }
-
-  .cartao-recurso:hover {
-    transform: translateY(-6px);
   }
 }
 
@@ -733,6 +733,10 @@ main {
   font-size: 1rem;
 }
 
+.cartao-membro:hover {
+  transform: translateY(-6px);
+}
+
 /* Responsividade: equipe */
 
 /* Tablet */
@@ -784,10 +788,6 @@ main {
   .equipe-cabecalho {
     gap: 8px;
     margin-bottom: 45px;
-  }
-
-  .cartao-membro:hover {
-    transform: translateY(-6px);
   }
 
   .icone-membro {
@@ -886,6 +886,11 @@ main {
   object-fit: cover;
 }
 
+.botao-form:hover {
+  color: var(--azul-jovi);
+  background-color: var(--branco);
+  border: 1px solid var(--azul-jovi);
+}
 /* Responsividade: contato */
 
 /* Tablet */
@@ -1002,12 +1007,6 @@ main {
     border: 1px solid var(--azul-jovi);
   }
 
-  .botao-form:hover {
-    color: var(--azul-jovi);
-    background-color: var(--branco);
-    border: 1px solid var(--azul-jovi);
-  }
-
   .contato-imagem {
     max-width: 500px;
     margin-left: auto;
@@ -1061,6 +1060,11 @@ main {
   font-weight: 600;
 }
 
+.cta-botao:hover {
+  color: var(--branco);
+  background-color: transparent;
+}
+
 /* Responsividade: CTA */
 
 /* Tablet */
@@ -1108,11 +1112,6 @@ main {
     padding: 10px 20px;
     border: 1px solid var(--branco);
     transition: 0.3s ease;
-  }
-
-  .cta-botao:hover {
-    color: var(--branco);
-    background-color: transparent;
   }
 }
 
@@ -1182,6 +1181,9 @@ main {
   object-fit: contain;
 }
 
+.rodape-coluna ul li a:hover {
+  color: var(--azul-jovi);
+}
 /* Responsividade: Footer */
 
 /* Tablet */
@@ -1257,10 +1259,6 @@ main {
 
   .rodape-coluna ul li a {
     transition: 0.3s ease;
-  }
-
-  .rodape-coluna ul li a:hover {
-    color: var(--azul-jovi);
   }
 }
 
