@@ -9,6 +9,7 @@
   --borda-card: #1e46e60d;
   --sub-escuro: #242933d9;
   --borda-form: #00000026;
+  --gradiente-jovi: linear-gradient(106deg, #112780, #1e46e6);
 
   --font-size-titulo-hero-mobile: 2.5rem;
   --font-size-sub-hero-mobile: 1rem;
@@ -1001,9 +1002,8 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
-
   .contato-grade {
-    max-width: 1200px;   
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -1016,6 +1016,108 @@ main {
 /* Fim Responsividade: contato */
 
 /* Fim: Contato */
-/* */
-/* */
-/* */
+
+/*Início: CTA */
+
+.cta-section {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--gradiente-jovi);
+  color: var(--branco);
+}
+
+#cta-titulo {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+#cta-sub {
+  font-size: 0.9rem;
+  color: var(--branco-sub);
+  margin-bottom: 16px;
+}
+
+.cta-botao {
+  font-size: 0.9rem;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: var(--azul-escuro-jovi);
+  background-color: var(--branco);
+  font-weight: 600;
+}
+
+/* Responsividade: CTA */
+
+/* Tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .cta-section {
+    padding: 2.3rem 1.5rem;
+  }
+
+  #cta-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  #cta-sub {
+    font-size: 0.9rem;
+    color: var(--branco-sub);
+    margin-bottom: 16px;
+  }
+
+  .cta-botao {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .cta-section {
+    padding: 3rem 1.5rem;
+  }
+
+  #cta-titulo {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  #cta-sub {
+    font-size: 1.2rem;
+    color: var(--branco-sub);
+    margin-bottom: 30px;
+  }
+
+  .cta-botao {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid var(--branco);
+    transition: 0.3s ease;
+  }
+
+  .cta-botao:hover {
+    color: var(--branco);
+    background-color: transparent;
+  }
+}
+
+/* Fim Responsividade: CTA */
+
+/* Fim: CTA */
+
+/* Início: Footer */
+
+/* Responsividade: Footer */
+
+/* Tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+}
+
+/* Fim Responsividade: Footer */
+/* Fim: Footer */
