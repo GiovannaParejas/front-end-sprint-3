@@ -1,237 +1,357 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Início</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <title>Início</title>
-</head>
+  <body>
+    <!-- Menu -->
+    <header class="menu">
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="./src/assets/logo-jovi.svg"
+            alt="Logo da JOVI"
+            class="logo-jovi"
+          />
+        </a>
 
-<body>
-  <!-- Menu -->
-  <header class="menu">
-    <nav class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-jovi" aria-label="logo da Jovi"></span>
-      </a>
+        <div class="menu-itens">
+          <input
+            type="checkbox"
+            name="menu-botao"
+            id="menu-hamburguer"
+            class="menu-botao"
+          />
+          <label for="menu-hamburguer">
+            <span class="menu-icon"></span>
+          </label>
+          <ul class="lista-itens">
+            <li><a href="index.html">Início</a></li>
+            <hr class="divisor-menu" />
+            <li><a href="#solucao">Solução</a></li>
+            <hr class="divisor-menu" />
+            <li><a href="#publico-alvo">Público-alvo</a></li>
+            <hr class="divisor-menu" />
+            <li><a href="#galeria">Galeria</a></li>
+            <hr class="divisor-menu" />
+            <li><a href="#nossa-equipe">Nossa Equipe</a></li>
+            <hr class="divisor-menu" />
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-      <div class="menu-itens">
-        <input type="checkbox" name="menu-botao" id="menu-hamburguer" class="menu-botao" />
-        <label for="menu-hamburguer">
-          <span class="menu-icon"></span>
-        </label>
-        <ul class="lista-itens">
-          <li><a href="index.html">Início</a></li>
-          <hr class="divisor-menu" />
-          <li><a href="#solucao">Solução</a></li>
-          <hr class="divisor-menu" />
-          <li><a href="#publico-alvo">Público-alvo</a></li>
-          <hr class="divisor-menu" />
-          <li><a href="#galeria">Galeria</a></li>
-          <hr class="divisor-menu" />
-          <li><a href="#">Nossa Equipe</a></li>
-          <hr class="divisor-menu" />
-          <li><a href="#">Contato</a></li>
+    <main>
+      <!-- Hero -->
+      <section id="hero-section">
+        <div class="hero-conteudo">
+          <h1 id="hero-titulo">JOVI Study Lens</h1>
+          <h2 id="hero-sub">A câmera que estuda com você</h2>
+
+          <div class="hero-botoes">
+            <a href="#solucao" class="hero-botao">Conheça a solução</a>
+            <a href="#galeria" class="hero-botao hero-botao-prototipo">Ver protótipo</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solução -->
+      <section class="solucao-section" id="solucao">
+        <div id="solucao-cabecalho">
+          <h2 id="solucao-titulo">Transforme imagens em conhecimento</h2>
+          <h3 id="solucao-sub">
+            Tudo que o estudante precisa, dentro da câmera
+          </h3>
+        </div>
+
+        <div class="grade-recursos">
+          <article class="cartao-recurso">
+            <div class="area-recurso">
+              <img
+                src="./src/assets/camera-icon.svg"
+                alt="Câmera ícone"
+                class="icone-recurso"
+              />
+            </div>
+            <h4>Fotos que não viravam estudo</h4>
+            <p>
+              <span class="cartao-recurso-span">97%</span> dos estudantes
+              fotografam o conteúdo em aula, mas as imagens ficam dispersas,
+              ilegíveis e sem contexto na galeria.
+            </p>
+          </article>
+
+          <article class="cartao-recurso">
+            <div class="area-recurso">
+              <img
+                src="./src/assets/lupa-icon.svg"
+                alt="Lupa ícone"
+                class="icone-recurso"
+              />
+            </div>
+            <h4>A câmera que reconhece o contexto</h4>
+            <p>
+              Ao apontar para lousas, slides ou documentos, o JOVI Study Lens
+              ativa o Modo Estudo automaticamente.
+            </p>
+          </article>
+
+          <article class="cartao-recurso">
+            <div class="area-recurso">
+              <img
+                src="./src/assets/scan-icon.svg"
+                alt="Sacn ícone"
+                class="icone-recurso"
+              />
+            </div>
+            <h4>Do visual para o editável</h4>
+            <p>
+              O texto da imagem é extraído na hora da captura e fica disponível
+              para copiar, editar e salvar, sem transcrição manual.
+            </p>
+          </article>
+
+          <article class="cartao-recurso">
+            <div class="area-recurso">
+              <img
+                src="./src/assets/sparkle-icon.svg"
+                alt="Sparkle ícone"
+                class="icone-recurso"
+              />
+            </div>
+            <h4>Resumos prontos para revisar</h4>
+            <p>
+              A IA generativa transforma o conteúdo fotografado em resumos
+              estruturados, prontos para a revisão antes da prova.
+            </p>
+          </article>
+
+          <article class="cartao-recurso">
+            <div class="area-recurso">
+              <img
+                src="./src/assets/folder-icon.svg"
+                alt="Folder ícone"
+                class="icone-recurso"
+              />
+            </div>
+            <h4>Tudo no lugar certo</h4>
+            <p>
+              Arquivos salvos por disciplina, convertidos em PDF e com destaque
+              de trechos importantes, sem esforço manual.
+            </p>
+          </article>
+
+          <article class="cartao-recurso">
+            <div class="area-recurso">
+              <img
+                src="./src/assets/translate-icon.svg"
+                alt="Translate ícone"
+                class="icone-recurso"
+              />
+            </div>
+            <h4>Sem barreira de idioma</h4>
+            <p>
+              Conteúdo em outro idioma? A câmera traduz automaticamente para o
+              idioma do dispositivo no momento da captura.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Público-alvo-->
+      <section class="publico-section" id="publico-alvo">
+        <div class="publico-grid">
+          <img
+            src="./src/assets/publico-alvo-img.jpg"
+            alt="Estudante usando o celular para estudar"
+            class="publico-imagem"
+          />
+
+          <div id="publico-texto">
+            <h2 id="publico-titulo">Feito para quem estuda de verdade</h2>
+            <p>
+              Estudantes do ensino médio e superior que registram cada aula pelo
+              celular, mas perdem o conteúdo na bagunça da galeria, com fotos
+              ilegíveis, sem organização e sem aproveitar o conteúdo.
+            </p>
+            <span class="divisor-paragrafo"></span>
+            <p>
+              O JOVI Study Lens é relevante porque resolve na captura o que hoje
+              exige tempo, esforço e múltiplos apps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria -->
+      <section class="galeria-section" id="galeria">
+        <h2 class="galeria-titulo">Veja o JOVI Study Lens em ação</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/assets/carrossel-1.png" alt="Tela Inicial" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/carrossel-2.png" alt="Pasta" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/carrossel-3.png" alt="Notas" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/carrossel-4.png" alt="IA" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/carrossel-5.png" alt="Grifar" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/carrossel-6.png" alt="Copiar" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/carrossel-8.png" alt="Traduzir" />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Nossa Equipe -->
+      <section class="equipe-section" id="nossa-equipe">
+        <div class="equipe-cabecalho">
+          <h2 id="equipe-titulo">Consultoria UNO</h2>
+          <p id="equipe-sub">O time por trás do JOVI Study Lens</p>
+        </div>
+
+        <ul class="grade-equipe">
+          <li class="cartao-membro">
+            <div class="area-membro">
+              <img
+                src="./src/assets/bruce-icone.svg"
+                alt="Logo Bruce"
+                class="icone-membro"
+              />
+            </div>
+            <h3>Bruce Li</h3>
+            <p>User Researcher & Estrategista de Produto</p>
+          </li>
+
+          <li class="cartao-membro">
+            <div class="area-membro">
+              <img
+                src="./src/assets/felipe-icone.svg"
+                alt="Logo Felipe"
+                class="icone-membro"
+              />
+            </div>
+            <h3>Felipe Rorato</h3>
+            <p>Analista de Requisitos & Editor de Vídeo</p>
+          </li>
+
+          <li class="cartao-membro">
+            <div class="area-membro">
+              <img
+                src="./src/assets/giovanna-icone.svg"
+                alt="Logo Giovanna"
+                class="icone-membro"
+              />
+            </div>
+            <h3>Giovanna Parejas</h3>
+            <p>UI/UX Designer & Desenvolvedora Front-end</p>
+          </li>
+
+          <li class="cartao-membro">
+            <div class="area-membro">
+              <img
+                src="./src/assets/laura-icone.svg"
+                alt="Logo Laura"
+                class="icone-membro"
+              />
+            </div>
+            <h3>Laura Mirilli</h3>
+            <p>Desenvolvedora Back-end & Analista de Sistemas</p>
+          </li>
         </ul>
-      </div>
-    </nav>
-  </header>
+      </section>
 
-  <main>
-    <!-- Hero -->
-    <section id="hero-section">
-      <div class="hero-conteudo">
-        <h1 id="hero-titulo">JOVI Study Lens</h1>
-        <h2 id="hero-sub">A câmera que estuda com você</h2>
+      <!-- Contato -->
+      <section class="contato-section" id="contato">
+        <div class="contato-grade">
+          <div class="contato-form-wrap">
+            <div class="contato-cabecalho">
+              <h2 id="contato-titulo">Fale com a equipe</h2>
+              <p id="contato-sub">
+                Dúvidas ou sugestões? Envie uma
+                mensagem
+              </p>
+            </div>
 
-        <div class="hero-botoes">
-          <a href="" class="hero-botao">Conheça a solução</a>
-          <a href="" class="hero-botao hero-botao-prototipo">Ver protótipo</a>
+            <form action="" class="contato-form" id="formContato">
+              <div class="campos">
+                <div class="campo">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Insira o seu nome"
+                  required
+                />
+              </div>
+
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="exemplo@email.com"
+                  required
+                />
+              </div>
+
+              <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  name="mensagem"
+                  id="mensagem"
+                  placeholder="Digite a sua mensagem"
+                  required
+                ></textarea>
+              </div>
+              </div>
+              
+
+              <button type="submit" class="botao-form">Enviar Mensagem</button>
+              <p class="form-status" id="formStatus" role="status"></p>
+            </form>
+          </div>
+
+          <img
+            src="./src/assets/contato-img.png"
+            alt="Pessoa ao telefone, sentada perto de uma janela, com um laptop sobre a mesa ao fundo."
+            class="contato-imagem"
+          />
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Solução -->
-    <section class="solucao-section" id="solucao">
-      <div id="solucao-cabecalho">
-        <h2 id="solucao-titulo">Transforme imagens em conhecimento</h2>
-        <h3 id="solucao-sub">
-          Tudo que o estudante precisa, dentro da câmera
-        </h3>
-      </div>
-
-      <div class="grade-recursos">
-        <article class="cartao-recurso">
-          <div class="area-recurso">
-            <span class="icone-recurso camera"></span>
-          </div>
-          <h4>Fotos que não viravam estudo</h4>
-          <p>
-            <span class="cartao-recurso-span">97%</span> dos estudantes fotografam o conteúdo em aula, mas
-            as imagens ficam dispersas, ilegíveis e sem contexto na galeria.
-          </p>
-        </article>
-
-        <article class="cartao-recurso">
-          <div class="area-recurso">
-            <span class="icone-recurso lupa"></span>
-          </div>
-          <h4>A câmera que reconhece o contexto</h4>
-          <p>
-            Ao apontar para lousas, slides ou documentos, o JOVI Study Lens
-            ativa o Modo Estudo automaticamente.
-          </p>
-        </article>
-
-        <article class="cartao-recurso">
-          <div class="area-recurso">
-            <span class="icone-recurso scan"></span>
-          </div>
-          <h4>Do visual para o editável</h4>
-          <p>
-            O texto da imagem é extraído na hora da captura e fica disponível
-            para copiar, editar e salvar, sem transcrição manual.
-          </p>
-        </article>
-
-        <article class="cartao-recurso">
-          <div class="area-recurso">
-            <span class="icone-recurso sparkle"></span>
-          </div>
-          <h4>Resumos prontos para revisar</h4>
-          <p>
-            A IA generativa transforma o conteúdo fotografado em resumos
-            estruturados, prontos para a revisão antes da prova.
-          </p>
-        </article>
-
-        <article class="cartao-recurso">
-          <div class="area-recurso">
-            <span class="icone-recurso folder"></span>
-          </div>
-          <h4>Tudo no lugar certo</h4>
-          <p>
-            Arquivos salvos por disciplina, convertidos em PDF e com destaque
-            de trechos importantes, sem esforço manual.
-          </p>
-        </article>
-
-        <article class="cartao-recurso">
-          <div class="area-recurso">
-            <span class="icone-recurso translate"></span>
-          </div>
-          <h4>Sem barreira de idioma</h4>
-          <p>
-            Conteúdo em outro idioma? A câmera traduz automaticamente para o
-            idioma do dispositivo no momento da captura.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Público-alvo-->
-    <section class="publico-section" id="publico-alvo">
-      <div class="publico-grid">
-        <span class="publico-imagem"></span>
-
-        <div id="publico-texto">
-          <h2 id="publico-titulo">
-            Feito para quem estuda de verdade
-          </h2>
-          <p>
-            Estudantes do ensino médio e superior que registram cada aula pelo celular, mas perdem o conteúdo na bagunça
-            da galeria, com fotos ilegíveis, sem organização e sem aproveitar o conteúdo.
-          </p>
-          <span class="divisor-paragrafo"></span>
-          <p>O JOVI Study Lens é relevante porque resolve na captura o que hoje exige tempo, esforço e múltiplos apps.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Galeria -->
-    <section class="galeria-section" id="galeria">
-
-      <h2 class="galeria-titulo">Veja o JOVI Study Lens em ação</h2>
-
-      <div class="swiper">
-
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide"><img src="./src/assets/carrossel-1.png" alt="Tela Inicial"></div>
-          <div class="swiper-slide"><img src="./src/assets/carrossel-2.png" alt="Pasta"></div>
-          <div class="swiper-slide"><img src="./src/assets/carrossel-3.png" alt="Notas"></div>
-          <div class="swiper-slide"><img src="./src/assets/carrossel-4.png" alt="IA"></div>
-          <div class="swiper-slide"><img src="./src/assets/carrossel-5.png" alt="Grifar"></div>
-          <div class="swiper-slide"><img src="./src/assets/carrossel-6.png" alt="Copiar"></div>
-          <div class="swiper-slide"><img src="./src/assets/carrossel-8.png" alt="Traduzir"></div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-
-      </div>
-    </section>
-
-    <!-- Nossa Equipe -->
-    <section class="equipe-section">
-
-      <div class="equipe-cabecalho">
-        <h2 id="equipe-titulo">Consultoria UNO</h2>
-        <p id="equipe-sub">
-          O time por trás do JOVI Study Lens
-        </p>
-      </div>
-
-      <ul class="grade-equipe">
-
-        <li class="cartao-membro">
-          <div class="area-membro">
-            <span class="icone-membro bruce"></span>
-          </div>
-          <h3>Bruce Li</h3>
-          <p>User Researcher & Estrategista de Produto</p>
-        </li>
-
-        <li class="cartao-membro">
-          <div class="area-membro">
-            <span class="icone-membro felipe"></span>
-          </div>
-          <h3>Felipe Rorato</h3>
-          <p>Analista de Requisitos & Editor de Vídeo</p>
-        </li>
-
-        <li class="cartao-membro">
-          <div class="area-membro">
-            <span class="icone-membro giovanna"></span>
-          </div>
-          <h3>Giovanna Parejas</h3>
-          <p>UI/UX Designer & Desenvolvedora Front-end</p>
-        </li>
-
-        <li class="cartao-membro">
-          <div class="area-membro">
-            <span class="icone-membro laura"></span>
-          </div>
-          <h3>Laura Mirilli</h3>
-          <p>Desenvolvedora Back-end & Analista de Sistemas</p>
-        </li>
-
-      </ul>
-
-    </section>
-  </main>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js">
-  </script>
-  <script src="./src/js/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
