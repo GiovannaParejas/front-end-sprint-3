@@ -648,7 +648,7 @@ main {
   margin-bottom: 10px;
 }
 
-/* Responsividade: solução */
+/* Responsividade: galeria */
 
 /* Tablet */
 @media screen and (min-width: 576px) and (max-width: 991px) {
@@ -674,16 +674,166 @@ main {
 
   .galeria-titulo {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 
   .swiper {
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     --swiper-pagination-bullet-size: 12px;
     --swiper-pagination-bullet-horizontal-gap: 4px;
   }
 
 }
 
-/* Fim Responsividade: solução */
+/* Fim Responsividade: galeria */
 /* Fim: Galeria */
+
+/* Início: Equipe  */
+
+.equipe-section {
+  padding: 20px 24px 20px 24px;
+}
+
+.area-membro {
+  display: flex;
+  justify-content: center;
+}
+
+.icone-membro {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bruce {
+  background-image: url(../assets/bruce-icone.svg);
+}
+
+.felipe {
+  background-image: url(../assets/felipe-icone.svg);
+}
+
+.giovanna {
+  background-image: url(../assets/giovanna-icone.svg);
+}
+
+.laura {
+  background-image: url(../assets/laura-icone.svg);
+}
+
+.grade-equipe {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.equipe-cabecalho {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+  gap: 8px;
+}
+
+#equipe-titulo {
+  font-size: var(--font-size-titulo-mobile);
+}
+
+#equipe-sub {
+  font-size: var(--font-size-sub-mobile);
+}
+
+.cartao-membro {
+  text-align: center;
+  background: var(--branco);
+  border: 1px solid var(--borda-card);
+  box-shadow: 0px 10px 30px 6px rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.cartao-membro h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.cartao-membro p {
+  font-size: 1rem;
+}
+
+/* Responsividade: equipe */
+
+/* Tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .equipe-section {
+    padding: 30px 60px 30px 60px;
+  }
+
+  .equipe-cabecalho {
+    gap: 10px;
+    margin-bottom: 35px;
+  }
+
+    .grade-equipe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #equipe-titulo {
+    font-size: 1.8rem;
+  }
+
+  #equipe-sub {
+    font-size: 1.2rem;
+  }
+
+  .icone-membro {
+    margin-bottom: 12px;
+  }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+  .equipe-section {
+    padding: 40px 120px 40px 120px;
+  }
+
+  .grade-equipe {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #equipe-titulo {
+    font-size: 2rem;
+  }
+
+  #equipe-sub {
+    font-size: 1.2rem;
+  }
+
+  .equipe-cabecalho {
+    gap: 8px;
+    margin-bottom: 45px;
+  }
+
+  .icone-membro {
+    margin-bottom: 16px;
+  }
+
+}
+
+/* Fim Responsividade: equipe */
+
+/* Fim: Nossa Equipe */
+/* */
+/* */
+/* */
+/* */
+/* */
